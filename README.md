@@ -43,25 +43,23 @@ These inputs are transformed via one-hot encoding to match the format the model 
 
    ```bash
    pip install pandas scikit-learn joblib
+   ```
 
+3. Run the prediction script:
 
+   ```bash
+   python result_score_prediction_model.py
+   ```
 
-   Run the prediction script:
+4. Enter the required inputs when prompted.
+5. The model will return the **predicted exam score** based on the provided information.
+6. After prediction, you’ll be asked whether you want to try again.
 
-bash
-Copy
-Edit
-python result_score_prediction_model.py
-Enter the required inputs when prompted.
+---
 
-The model will return the predicted exam score based on the provided information.
+## 💬 Example Interaction
 
-After prediction, you’ll be asked whether you want to try again.
-
-💬 Example Interaction
-plaintext
-Copy
-Edit
+```plaintext
 Choose Gender:
 A. Male
 B. Female
@@ -91,12 +89,18 @@ C. Secondary
 
 Predicted Exam Score: 82.75
 Wanna try again? (Y/N)
-📌 Notes
-Ensure that the linear_regression_model.pkl is in the same directory as the script.
+```
 
-The model only predicts based on patterns learned from the provided dataset (SAP-4000.csv).
+---
 
-This is a regression model — not a classification system — so it outputs a continuous score (e.g., 74.5).
+## 📌 Notes
 
-🏁 Conclusion
-This project demonstrates how machine learning can be applied to educational data to generate insights and predictions.
+- Ensure that the `linear_regression_model.pkl` is in the same directory as the script.
+- The model only predicts based on patterns learned from the provided dataset (`SAP-4000.csv`).
+- This is a regression model — not a classification system — so it outputs a continuous score (e.g., 74.5).
+
+---
+
+## 🏁 Conclusion
+
+This project demonstrates how machine learning can be applied to educational data to generate insights and predictions. 
